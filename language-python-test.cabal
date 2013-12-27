@@ -27,3 +27,10 @@ Executable language-python-tokens
    main-is: Tokens.hs
    other-modules:
    build-depends:    base == 4.*, language-python == 0.4.0
+
+Executable language-python-parse-pretty
+   hs-source-dirs:
+      ./src
+   main-is: ParsePretty.hs
+   other-modules:
+   build-depends:    base == 4.*, language-python == 0.4.0
