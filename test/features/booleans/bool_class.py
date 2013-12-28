@@ -49,8 +49,8 @@ bool({1:1, 2:2})
 # call with set arguments
 
 bool(set())
-bool({1})
-bool({1,2})
+bool(set([1]))
+bool(set([1,2]))
 
 # call with an object argument
 

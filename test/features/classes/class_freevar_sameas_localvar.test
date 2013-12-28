@@ -1,4 +1,4 @@
-language-python-roundtrip n class_freevar_sameas_localvar.py
+language-python-roundtrip 3 class_freevar_sameas_localvar.py
 <<<
 >>>
 >>>2
