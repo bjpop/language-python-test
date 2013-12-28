@@ -1,2 +1,5 @@
-s = '''Hello
-World''' 
+'''Hello
+ World''' 
+
+''' foo \''' bar '''
+""" foo \""" bar """
