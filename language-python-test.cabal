@@ -6,11 +6,10 @@ description:         testing code for the language-python library
 category:            Language
 license:             BSD3
 license-file:        LICENSE
-copyright:           (c) 2011 Bernard James Pope
+copyright:           (c) 2014 Bernard James Pope
 author:              Bernard James Pope (Bernie Pope)
 maintainer:          florbitous@gmail.com
 homepage:            http://github.com/bjpop/language-python-test
-build-depends:       base
 build-type:          Simple
 stability:           experimental
 
@@ -19,18 +18,18 @@ Executable language-python-roundtrip
       ./src
    main-is: RoundTrip.hs
    other-modules:
-   build-depends:    base == 4.*, language-python == 0.4.0
+   build-depends:    base == 4.*, language-python == 0.4.1
 
 Executable language-python-tokens
    hs-source-dirs:
       ./src
    main-is: Tokens.hs
    other-modules:
-   build-depends:    base == 4.*, language-python == 0.4.0
+   build-depends:    base == 4.*, language-python == 0.4.1
 
 Executable language-python-parse-pretty
    hs-source-dirs:
       ./src
    main-is: ParsePretty.hs
    other-modules:
-   build-depends:    base == 4.*, language-python == 0.4.0
+   build-depends:    base == 4.*, language-python == 0.4.1
