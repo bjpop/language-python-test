@@ -43,3 +43,17 @@ The first program parses a Python file as input and pretty prints it back again.
 The second program performs a round-trip of parse, pretty print, parse and pretty print.
 
 The third program performs lexical analysis on the input Python file and pretty prints the resulting token stream.
+
+The test suite (which tests the behaviour of language-python) uses the shelltest tool. To run the tests you need to have shelltest installed:
+
+    cabal install shelltestrunner
+
+The tests are found in the sub-directory called tests.
+
+You can run the tests like so:
+
+    shelltest --color --execdir test/ -- -j1
+
+We provide a Makefile for convenience which does the same thing. You can run it like so:
+
+    make test
