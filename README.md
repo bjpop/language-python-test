@@ -15,14 +15,9 @@ contained in those directories.
 Installation
 ------------
 
-language-python-test can be installed with cabal:
+Install into a cabal sandbox:
 
-    cabal install language-python-test
-
-You may want to consider installing it in a sandbox. This will avoid
-polluting your cabal package database.
-
-    mkdir language_python_test
+    git clone https://github.com/bjpop/language-python-test/
     cd language_python_test
     cabal sandbox init
     cabal install language-python-test
@@ -40,7 +35,8 @@ The package builds the following executable programs:
 
 The first program parses a Python file as input and pretty prints it back again.
 
-The second program performs a round-trip of parse, pretty print, parse and pretty print.
+The second program performs a round-trip of parse, pretty print, parse and pretty print. It checks that the first
+pretty print is equal to the second pretty print. This is not a perfect test for correctness, but it does check that the parser and pretty printer agree to some extent, and is usually quite good at finding errors.
 
 The third program performs lexical analysis on the input Python file and pretty prints the resulting token stream.
 
@@ -50,7 +46,7 @@ The test suite (which tests the behaviour of language-python) uses the shelltest
 
 The tests are found in the sub-directory called tests.
 
-You can run the tests like so:
+You can run the tests like so from the top directory of the language-python-test package:
 
     shelltest --color --execdir test/ -- -j1
 
