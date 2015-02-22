@@ -1,7 +1,7 @@
 Introduction
 ============
 
-A test suite for the Haskell library language-python (a parser for Python 2 and 3).
+A test suite for the Haskell library [language-python](https://github.com/bjpop/language-python) (a parser for Python 2 and 3).
 
 License
 -------
