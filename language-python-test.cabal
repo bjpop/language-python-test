@@ -1,5 +1,5 @@
 name:                language-python-test
-version:             0.0.1
+version:             0.5.0
 cabal-version:       >= 1.6
 synopsis:            testing code for the language-python library
 description:         testing code for the language-python library
@@ -12,6 +12,10 @@ maintainer:          florbitous@gmail.com
 homepage:            http://github.com/bjpop/language-python-test
 build-type:          Simple
 stability:           experimental
+
+source-repository head
+   type: git
+   location: https://github.com/bjpop/language-python-test
 
 Executable language-python-roundtrip
    hs-source-dirs:
