@@ -18,7 +18,7 @@ Installation
 Install into a cabal sandbox:
 
     git clone https://github.com/bjpop/language-python-test/
-    cd language_python_test
+    cd language-python-test
     cabal sandbox init
     cabal install language-python-test
     # perhaps copy the executables from language_python_test/.cabal-sandbox/bin to ~/.cabal/bin/
