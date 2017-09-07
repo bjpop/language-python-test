@@ -19,3 +19,7 @@ test_cpython2:
 .PHONY: test_cpython3
 test_cpython3:
 	shelltest --color --execdir test/CPython_test_suite_v3 -- -j1
+
+.PHONY: build
+build:
+	stack build --fast --copy-bins
