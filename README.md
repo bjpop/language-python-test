@@ -50,6 +50,14 @@ You can run the tests like so from the top directory of the language-python-test
 
     shelltest --color --execdir test/ -- -j1
 
+If you have installed into a cabal sandbox, then you might need to adjust your path:
+
+    PATH=.cabal-sandbox/bin/:$PATH shelltest --color --execdir test/ -- -j1 
+
 We provide a Makefile for convenience which does the same thing. You can run it like so:
 
     make test
+
+or, with PATH adjustment:
+
+    PATH=.cabal-sandbox/bin/:$PATH make test 
